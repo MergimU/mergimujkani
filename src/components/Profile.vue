@@ -35,6 +35,17 @@
       left: 5%;
 
       background: url('~@/assets/images/mergimujkani.jpg') no-repeat bottom left;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: var(--brand-2);
+        opacity: .2;
+      }
     }
 
     &__banner {

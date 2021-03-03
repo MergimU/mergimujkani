@@ -4,18 +4,25 @@
       <div class="home__left">
         <Profile/>
       </div>
-      <div class="home__right"></div>
+      <div class="home__right">
+        <Navigation />
+        <AboutMe />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
   import Profile from '../components/Profile';
+  import AboutMe from '../components/AboutMe';
+  import Navigation from '../components/Navigation';
 
   export default {
     name: 'home',
     components: {
       Profile,
+      AboutMe,
+      Navigation
     },
   };
 
@@ -38,6 +45,7 @@
       max-height: 740px;
       border-radius: 50px;
       overflow: hidden;
+      display: flex;
 
       &:before {
         content: '';
@@ -55,11 +63,17 @@
     }
 
     &__left {
-      // background-color: cyan;
       width: 100%;
       max-width: 500px;
       height: 100%;
       display: flex;
+    }
+
+    &__right {
+      color: #fff;
+      flex: 1;
+      position: relative;
+      padding: 45px 40px 40px 100px;
     }
   }
 
