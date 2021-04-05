@@ -6,7 +6,9 @@
       </div>
       <div class="home__right">
         <Navigation />
-        <AboutMe />
+        <AboutMe v-if="$route.name == 'AboutMe'" />
+        <Work v-else-if="$route.name === 'Work'" />
+        
       </div>
     </div>
   </div>
@@ -15,14 +17,16 @@
 <script>
   import Profile from '../components/Profile';
   import AboutMe from '../components/AboutMe';
+  import Work from '../views/Work';
   import Navigation from '../components/Navigation';
 
   export default {
     name: 'home',
     components: {
+      Navigation,
       Profile,
       AboutMe,
-      Navigation
+      Work
     },
   };
 
@@ -36,6 +40,10 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
+
+    @media (max-width: 1200px) {
+      padding: 0;
+    }
     
     &__inner {
       background-color: var(--brand-2);
@@ -46,6 +54,12 @@
       border-radius: 50px;
       overflow: hidden;
       display: flex;
+
+      @media (max-width: 1200px) {
+        max-width: none;
+        max-height: none;
+        border-radius: 0;
+      }
 
       &:before {
         content: '';
@@ -59,6 +73,10 @@
         transform-origin: center center;
         background-color: rgba(#000, 0.02);
         z-index: -1;
+
+        @media (max-width: 1200px) {
+          display: none;
+        }
       }
     }
 
@@ -67,6 +85,10 @@
       max-width: 500px;
       height: 100%;
       display: flex;
+
+      @media (max-width: 1200px) {
+        max-width: 300px;
+      }
     }
 
     &__right {

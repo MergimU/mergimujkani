@@ -6,8 +6,25 @@
       me<span>.</span>
     </p>
     <p class="about-me__description">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni non dicta iste incidunt numquam placeat, dignissimos sapiente est veritatis quia maxime minus similique, explicabo itaque excepturi enim nostrum alias dolores cum vitae ducimus modi atque eius harum! Tempore asperiores at voluptatem repellendus, facilis ipsam delectus commodi. Totam error architecto laudantium dolor expedita ducimus fugiat eligendi assumenda, in quaerat, excepturi facere et cum cupiditate quae placeat! Consequatur alias delectus necessitatibus quis soluta, et ad labore adipisci aut corporis magnam officia fugiat.
+      I’m a passionate, self-motivated Front-End Developer with 5+
+      years of experience developing software digital products.
+      <br>
+      <br>
+      I enjoy coding/implementing detailed front-end experiences -
+      mobile, web, and beyond - from quick prototypes to full
+      experience simulations.
+      <br>
+      <br>
+      I've had the pleasure to work with most of the new front-end frameworks and tools but the most
+      enjoyable tools/technologies I enjoy most working are: <a href="https://vuejs.org/">VueJS</a>,
+      <a href="https://sass-lang.com/">Sass</a> and SVG animations.
     </p>
+
+    <div class="about-me__socials">
+      <a target="_blank" href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"><img src="~@/assets/images/linkedin-icon.svg" alt="Linkedin"></a>
+      <a target="_blank" href="https://codepen.io/MergimUjkani/pens/public"><img src="~@/assets/images/codepen-icon.svg" alt="Codepen"></a>
+    </div>
+    
   </div>
 </template>
 
@@ -24,6 +41,7 @@
       .about {
         display: block;
       }
+
       span {
         color: var(--brand-1);
       }
@@ -31,6 +49,30 @@
 
     &__description {
       line-height: 22px;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    &__socials {
+      padding-top: 100px;
+
+      a {
+        background-color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+      
+      img {
+        width: 18px;
+      }
     }
   }
+
 </style>

@@ -27,6 +27,7 @@
     }
 
     &__image {
+      border-radius: 14px;
       width: 90%;
       height: 75%;
       background-color: var(--brand-2);
@@ -49,6 +50,7 @@
     }
 
     &__banner {
+      border-radius: 14px;
       height: 270px;
       width: 800px;
       position: absolute;
