@@ -8,10 +8,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: #fff;
 
   &__info {
     padding: 0 20px;
+    
+    &__social-networks {
+      padding-top: 40px;
+      img {
+        padding-right: 20px;
+        width: 20px;
+      }
+    }
   }
   
   h2 {
@@ -21,6 +30,7 @@
       line-height: 35px;
     }
   }
+  
   h1 {
     font-size: 55px;
     font-weight: bold;
@@ -31,8 +41,10 @@
       line-height: 50px;
     }
   }
+  
   p {
     font-size: 25px;
     padding-top: 30px;
   }
+
 }
