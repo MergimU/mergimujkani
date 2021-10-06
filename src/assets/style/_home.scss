@@ -10,13 +10,26 @@
   justify-content: center;
   color: #fff;
 
+  &__info {
+    padding: 0 20px;
+  }
+  
   h2 {
     font-size: 35px;
+
+    @media screen and (max-width: 767px) {
+      line-height: 35px;
+    }
   }
   h1 {
     font-size: 55px;
     font-weight: bold;
     line-height: 45px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 20px;
+      line-height: 50px;
+    }
   }
   p {
     font-size: 25px;
