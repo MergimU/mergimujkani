@@ -2,8 +2,8 @@
   <nav class="navigation">
     <ul>
       <li><router-link to="/about-me" class="active">About me</router-link></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a target="_blank" href="https://drive.google.com/file/d/14am7ZYVDI0yB_rAQ7v6Ucfj9Zn6cXE3W/view?usp=sharing">Resume</a></li>
+      <!-- <li><a href="mailto:mergim.ujkani@gmail.com">Contact</a></li> -->
     </ul>
   </nav>
 </template>
@@ -14,6 +14,13 @@
     top: 45px;
     left: 100px;
     color: #fff;
+    background-color: var(--brand-2);
+    padding-bottom: 20px;
+
+    @media (max-width: 768px) {
+      left: 40px;
+      background-color: transparent;
+    }
 
     ul {
       display: flex;

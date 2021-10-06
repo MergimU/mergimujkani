@@ -6,7 +6,7 @@
       me<span>.</span>
     </p>
     <p class="about-me__description">
-      I’m a passionate, self-motivated Front-End Developer with 5+
+      I’m Mergim Ujkani a passionate, self-motivated Front-End Developer with 5+
       years of experience developing software digital products.
       <br>
       <br>
@@ -15,14 +15,13 @@
       experience simulations.
       <br>
       <br>
-      I've had the pleasure to work with most of the new front-end frameworks and tools but the most
-      enjoyable tools/technologies I enjoy most working are: <a href="https://vuejs.org/">VueJS</a>,
-      <a href="https://sass-lang.com/">Sass</a> and SVG animations.
+      I've had the pleasure to work with new front-end technologies but the tools and technologies I enjoy most are: <a target="_blank" href="https://vuejs.org/">VueJS</a>,
+      <a target="_blank" href="https://sass-lang.com/">Sass</a> and SVG animations.
     </p>
 
     <div class="about-me__socials">
       <a target="_blank" href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"><img src="~@/assets/images/linkedin-icon.svg" alt="Linkedin"></a>
-      <a target="_blank" href="https://codepen.io/MergimUjkani/pens/public"><img src="~@/assets/images/codepen-icon.svg" alt="Codepen"></a>
+      <a target="_blank" href="https://codepen.io/MergimUjkani/pens/popular"><img src="~@/assets/images/codepen-icon.svg" alt="Codepen"></a>
     </div>
     
   </div>
@@ -32,6 +31,12 @@
   .about-me {
     padding-top: 100px;
     font-family: 'Raleway', sans-serif;
+    flex: 1;
+    overflow-x: hidden;
+
+    @media (max-width: 768px) {
+      padding-top: 20px;
+    }
 
     &__header {
       font-weight: 700;

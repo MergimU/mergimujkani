@@ -34,7 +34,6 @@
       position: absolute;
       bottom: 10%;
       left: 5%;
-
       background: url('~@/assets/images/mergimujkani.jpg') no-repeat bottom left;
 
       &:after {
@@ -45,7 +44,24 @@
         width: 100%;
         height: 100%;
         // background-color: var(--brand-2);
-        opacity: .2;
+        opacity: 1;
+
+        @media (max-width: 768px) {
+          background: rgb(2,0,36);
+          // background: linear-gradient(0deg, rgba(2,0,36, .2) 0%, rgba(62,46,91, .2) 35%, rgba(0,212,255, .2) 100%);
+        }
+      }
+
+      @media (max-width: 768px) {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+        opacity: 1;
+        
       }
     }
 
@@ -57,6 +73,11 @@
       bottom: 30%;
       right: -40px;
       background-color: var(--brand-1);
+
+      @media (max-width: 768px) {
+        opacity: 0;
+        z-index: 1;
+      }
     }
   }
 

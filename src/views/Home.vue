@@ -89,13 +89,30 @@
       @media (max-width: 1200px) {
         max-width: 300px;
       }
+
+      @media (max-width: 768px) {
+        position: absolute;
+        opacity: .3;
+        max-width: none;
+
+        .profile {
+          max-width: none;
+        }
+      }
     }
 
     &__right {
       color: #fff;
       flex: 1;
+      display: flex;
       position: relative;
       padding: 45px 40px 40px 100px;
+
+      @media (max-width: 768px) {
+        // padding-left: 70px;
+        // padding-top: 90px;
+        padding: 90px 40px 20px 40px;
+      }
     }
   }
 
