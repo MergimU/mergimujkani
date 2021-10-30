@@ -1,3 +1,20 @@
-@import './variables';
-@import './resets';
-@import './home';
+// Utils
+@import './utils/variables';
+
+// Base
+@import './base/resets';
+@import './base/background';
+@import './base/typography';
+
+// Utils
+@import './utils/variables';
+
+// Components
+@import './components/buttons';
+
+// Layout
+@import './layout/navigation';
+
+// Pages
+@import './pages/home';
+@import './pages/work';
