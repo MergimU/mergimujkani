@@ -9,12 +9,12 @@
             <a target="_blank"
                 href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
                 title="Linkedin">
-                <img src="@/assets/images/linkedin-icon.svg"
+                <img src="@/assets/images/socials/linkedin-icon.svg"
                     alt="Linkedin">
             </a>
             <a target="_blank"
                 href="https://codepen.io/MergimUjkani">
-                <img src="@/assets/images/codepen-icon.svg"
+                <img src="@/assets/images/socials/codepen-icon.svg"
                     alt="Codepen"
                     title="Codepen">
             </a>

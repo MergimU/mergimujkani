@@ -6,16 +6,13 @@
 		width: 100%;
 		max-width: var(--container);
 		margin: 0 auto;
+		padding: 200px 20px 50px 20px;
 	}
 
 	&__title {
 		color: #fff;
 		text-shadow: 1px 1px var(--text-color-1);
 		padding-bottom: 40px;
-	}
-
-	&__container {
-		padding: 200px 0 50px 0;
 	}
 
 	&__worked-for {
@@ -26,9 +23,10 @@
 		background-color: #fff;
 		padding: 20px;
 		margin-bottom: 24px;
+		display: flex;
 		
 		div {
-			width: 50%;
+			flex: 1;
 		}
 
 		&__info {
@@ -37,14 +35,41 @@
 			justify-content: center;
 			align-items: flex-start;
 			height: 100%;
+			min-width: 60%;
+			position: relative;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 1px;
+				height: 100%;
+				background-color: #efefef;
+				
+			}
+
 
 			h4 {
 				padding-top: 8px;
+				// @include rem(padding-top, 8px);
 			}
 
 			p {
-				margin: 10px 0 20px 0;
 				color: var(--text-color-2);
+				font-size: 12px;
+				margin: 10px 0 20px 0;
+			}
+		}
+
+		&__logo {
+			@include center();
+
+			img {
+				opacity: .8;
+				height: 70px;
+				max-width: 100px;
 			}
 		}
 	}

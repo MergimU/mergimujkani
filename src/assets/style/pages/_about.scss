@@ -1,0 +1,27 @@
+.about {
+    height: 100vh;
+
+	&__container {
+		width: 100%;
+		max-width: var(--container);
+		margin: 0 auto;
+		padding: 200px 20px 50px 20px;
+	}
+
+	&__title {
+		color: #fff;
+		text-shadow: 1px 1px var(--text-color-1);
+		padding-bottom: 40px;
+	}
+
+	&__description {
+		background-color: #fff;
+		box-shadow: 6px 4px 4px 0 #3c005b52;
+		border-radius: 20px;
+		color: var(--text-color-1);
+		font-size: var(--font-size-5);
+		line-height: 34px;
+		padding: 30px;
+		
+	}
+}

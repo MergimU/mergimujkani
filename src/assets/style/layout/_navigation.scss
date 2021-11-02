@@ -5,6 +5,20 @@
 
 	ul {
 		display: flex;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			// background-color: var(--color-primary);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 110%;
+			height: 70px;
+			border-radius: 8px;
+		}
 
 		li {
 
@@ -14,11 +28,12 @@
 				padding: 10px 20px;
 				transition: .3s;
 				border-radius: 4px;
+				position: relative;
+
 
 				&:hover,
 				&.router-link-exact-active {
 					box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1%);
-					border-color: none;
 				}
 			}
 		}

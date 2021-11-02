@@ -1,0 +1,9 @@
+@mixin rem($key, $value) {
+    #{$key}: ($value / 16) + rem;
+}
+
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

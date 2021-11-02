@@ -8,6 +8,7 @@
 
 // Utils
 @import './utils/variables';
+@import './utils/mixins';
 
 // Components
 @import './components/buttons';
@@ -18,3 +19,4 @@
 // Pages
 @import './pages/home';
 @import './pages/work';
+@import './pages/about';
