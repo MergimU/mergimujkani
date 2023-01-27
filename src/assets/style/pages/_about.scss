@@ -5,23 +5,26 @@
 		width: 100%;
 		max-width: var(--container);
 		margin: 0 auto;
-		padding: 200px 20px 50px 20px;
+		padding: 12.5rem 1.25rem 3.125rem 1.25rem;
 	}
 
 	&__title {
-		color: #fff;
-		text-shadow: 1px 1px var(--text-color-1);
-		padding-bottom: 40px;
+		color: #353535;
+		padding-bottom: 2.5rem;
+		font-weight: 600;
 	}
 
 	&__description {
 		background-color: #fff;
-		box-shadow: 6px 4px 4px 0 #3c005b52;
-		border-radius: 20px;
+		box-shadow: .375rem .1875rem 1.5rem 0 #3c005b1a;
+		border-radius: 1.25rem;
 		color: var(--text-color-1);
 		font-size: var(--font-size-5);
-		line-height: 34px;
-		padding: 30px;
+		line-height: 2.125rem;
+		padding: 1.875rem;
 		
+		a {
+			color: inherit;
+		}
 	}
 }

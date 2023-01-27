@@ -4,19 +4,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: #353535;
 
     &__info {
-        padding: 0 20px;
+        padding: 0 1.25rem;
         max-width: var(--container);
-        text-shadow: 1px 1px var(--text-color-1);
-
+        
         &__social-networks {
-            padding-top: 40px;
+            padding-top: 2.5rem;
+            position: absolute;
+            bottom: 3.125rem;
+            right: 3.125rem;
 
             img {
-                padding-right: 20px;
-                height: 20px;
+                padding-left: 1.25rem;
+                height: 1.25rem;
                 opacity: .6;
                 transition: .2s;
 
@@ -30,25 +32,25 @@
     h2 {
         font-size: var(--font-size-3);
 
-        @media screen and (max-width: 767px) {
-            line-height: 35px;
+        @media screen and (max-width: 47.9375rem) {
+            line-height: 2.1875rem;
         }
     }
 
     h1 {
         font-size: var(--font-size-1);
         font-weight: bold;
-        line-height: 45px;
+        line-height: 2.8125rem;
 
-        @media screen and (max-width: 767px) {
-            padding-top: 20px;
-            line-height: 50px;
+        @media screen and (max-width: 47.9375rem) {
+            padding-top: 1.25rem;
+            line-height: 3.125rem;
         }
     }
 
     p {
         font-size: var(--font-size-4);
-        padding-top: 30px;
-        line-height: 28px;
+        padding-top: 1.875rem;
+        line-height: 2.375rem;
     }
 }

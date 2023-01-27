@@ -1,16 +1,29 @@
 <template>
-	<div>
-		<div class="about">
-			<div class="about__container">
-				<h3 class="about__title">Here's something about me:</h3>
-				<p class="about__description">
-					I've been a front-end developer for about 6 years now, all this time I've been developing websites and web-apps focusing on the UI part and the most fun I have doing so is creating good CSS architecture that is well ordered and maintainable.<br>
-As a web developer I find it important to keep up the latest technologies but not learn all of them because life's too short for keeping up with all the frameworks :p .<br>
-I've had the pleasure to work with most major frameworks like Angular, React and Vue, but my focus is now only on Vue because it does the job very well for websites also mid-large size web-applications and it has that simplicity that makes me feel comfortable.<br>
-After joining a new company, I always felt that good energy to work because of the the new things I had to learn and improving myself is one of the key points of my career.<br>
-Learning and working takes a lot of brain power and to keep a well balanced life, I read books, workout and play video games to enjoy different worlds :)
-				</p>
-			</div>
-		</div>
-	</div>
+  <div class="about">
+    <div class="about__container">
+      <h3 class="about__title">Here's something about me:</h3>
+      <p class="about__description">
+        Name: Mergim Ujkani <br>
+        Location: Kosovo <br>
+        Contact: <a href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
+           target="_blank">https://www.linkedin.com</a>
+        <br>
+        <br>
+        Summary:
+        <br>
+        Experienced front end developer with over 6 years of experience working with web frameworks such as React and
+        Vue. Passionate about CSS and UI design, with a strong focus on creating intuitive and visually appealing
+        web applications. <br>
+        Skilled in modern web development techniques, including responsive design, accessibility,
+        and performance optimization. Seeking a challenging role at a company that values creativity and innovation.
+        <br /> <br />
+        Skills:
+        <br />
+        - Proficient in React, Vue, HTML, CSS, and JavaScript.<br />
+        - Experience with modern web development tools such as Webpack and Babel.<br />
+        - Proficient in design tools such as Sketch and Adobe XD.<br />
+        - Strong problem-solving and communication skills.<br />
+      </p>
+    </div>
+  </div>
 </template>

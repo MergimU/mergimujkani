@@ -1,39 +1,26 @@
 .navigation {
 	position: fixed;
-	top: 50px;
-	right: 50px;
+	top: 3.125rem;
+	right: 3.125rem;
+	transition: .2s;
 
 	ul {
 		display: flex;
-		position: relative;
-
-		&:before {
-			content: '';
-			display: block;
-			// background-color: var(--color-primary);
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 110%;
-			height: 70px;
-			border-radius: 8px;
-		}
 
 		li {
 
 			a {
 				color: var(--text-color-1);
 				text-decoration: none;
-				padding: 10px 20px;
+				padding: .625rem 1.25rem;
 				transition: .3s;
-				border-radius: 4px;
+				border-radius: .25rem;
 				position: relative;
 
 
 				&:hover,
 				&.router-link-exact-active {
-					box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1%);
+					box-shadow: .4375rem .4375rem 0rem 0rem rgba(0, 0, 0, 0.03%);
 				}
 			}
 		}

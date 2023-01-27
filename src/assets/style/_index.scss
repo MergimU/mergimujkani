@@ -1,14 +1,12 @@
 // Utils
 @import './utils/variables';
+@import './utils/mixins';
 
 // Base
 @import './base/resets';
 @import './base/background';
 @import './base/typography';
 
-// Utils
-@import './utils/variables';
-@import './utils/mixins';
 
 // Components
 @import './components/buttons';
