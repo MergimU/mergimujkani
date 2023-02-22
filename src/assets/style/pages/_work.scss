@@ -7,6 +7,10 @@
 		max-width: var(--container);
 		margin: 0 auto;
 		padding: 12.5rem 1.25rem 3.125rem 1.25rem;
+
+		@media screen and (max-width: 37.5rem) {
+			padding-top: 9rem;
+		}
 	}
 
 	&__title {
@@ -77,6 +81,10 @@
 
 		&__logo {
 			@include center;
+
+			@media screen and (max-width: 37.5rem) {
+				display: none;
+			}
 
 			img {
 				opacity: .8;
