@@ -4,6 +4,11 @@
 	right: 3.125rem;
 	transition: .2s;
 
+	@media screen and (max-width: 600px) {
+		right: auto;
+		left: 0;
+	}
+
 	ul {
 		display: flex;
 
