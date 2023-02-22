@@ -59,14 +59,15 @@
       <div class="work__worked-for">
         <div class="work__worked-for__info">
           <h4>Linky</h4>
-          <p><span>Chrome extension:</span> <br />During web browsing you encounter an item that you want to purchase, you just
+          <p><span>Chrome extension:</span> <br />During web browsing you encounter an item that you want to purchase, you
+            just
             simply highlight that and it will show options on where you want to purchase that item.
             <br /> <br />
             If you like reading online and have unknown words, then you just highlight a word and options are shown like
             Wikipedia so you can get info for that word.
           </p>
           <a class="btn btn--primary btn--primary"
-             href="https://codepen.io/MergimUjkani"
+             href="https://chrome.google.com/webstore/detail/linky/alfhdmidbiiklpndmlgakcheoojncdja?hl=en-US"
              target="_blank">Visit website</a>
         </div>
         <div class="work__worked-for__logo">
