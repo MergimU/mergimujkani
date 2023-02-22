@@ -3,9 +3,9 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `
-          @import "@/assets/style/index.scss";
-        `
-      }
-    }
-  }
+          @import "@/assets/style/_index.scss";
+        `,
+      },
+    },
+  },
 };

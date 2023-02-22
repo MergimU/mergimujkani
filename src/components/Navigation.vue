@@ -1,48 +1,43 @@
 <template>
   <nav class="navigation">
     <ul>
-      <li><router-link to="/about-me" class="active">About me</router-link></li>
-      <li><a target="_blank" href="https://drive.google.com/file/d/14am7ZYVDI0yB_rAQ7v6Ucfj9Zn6cXE3W/view?usp=sharing">Resume</a></li>
-      <!-- <li><a href="mailto:mergim.ujkani@gmail.com">Contact</a></li> -->
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/work">Work</router-link>
+      </li>
+      <li>
+        <router-link to="/about-me">About</router-link>
+      </li>
     </ul>
   </nav>
 </template>
 
-<style lang="scss">
-  .navigation {
-    position: absolute;
-    top: 45px;
-    left: 100px;
-    color: #fff;
-    background-color: var(--brand-2);
-    padding-bottom: 20px;
+<script>
+export default {
+  mounted() {
+    const nav = document.querySelector('.navigation');
+    const menuToggle = 110;
 
-    @media (max-width: 768px) {
-      left: 40px;
-      background-color: transparent;
-    }
-
-    ul {
-      display: flex;
-
-      li {
-        padding-right: 20px;
-        text-decoration: none;
-
-        a {
-          color: #fff;
-          font-family: 'Raleway', sans-serif;
-          text-decoration: none;
-          border-bottom: 1px solid transparent;
-          font-weight: 500;
-          
-
-          &.active {
-            color: var(--brand-1);
-            border-color: var(--brand-1);
+    let cache = null;
+    window.addEventListener('scroll', (e) => {
+      if (!cache) {
+        setTimeout(() => {
+          // Add all the code
+          const positionY = window.pageYOffset;
+          if (positionY > menuToggle) {
+            nav.style.opacity = '0';
+          } else {
+            nav.style.opacity = '1';
           }
-        }
+          console.log(e);
+          cache = null;
+        }, 300);
+        cache = e;
       }
-    }
-  }
-</style>
+    });
+  },
+};
+
+</script>

@@ -1,0 +1,28 @@
+.navigation {
+	position: fixed;
+	top: 3.125rem;
+	right: 3.125rem;
+	transition: .2s;
+
+	ul {
+		display: flex;
+
+		li {
+
+			a {
+				color: var(--text-color-1);
+				text-decoration: none;
+				padding: .625rem 1.25rem;
+				transition: .3s;
+				border-radius: .25rem;
+				position: relative;
+
+
+				&:hover,
+				&.router-link-exact-active {
+					box-shadow: .4375rem .4375rem 0rem 0rem rgba(0, 0, 0, 0.03%);
+				}
+			}
+		}
+	}
+}
