@@ -9,7 +9,7 @@
     &__info {
         padding: 0 1.25rem;
         max-width: var(--container);
-        
+
         &__social-networks {
             padding-top: 2.5rem;
             position: absolute;
@@ -27,6 +27,12 @@
                 }
             }
         }
+    }
+
+    &__time {
+        color: var(--text-color-2);
+        padding-top: 20px;
+        display: block;
     }
 
     h2 {
