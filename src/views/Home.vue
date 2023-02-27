@@ -3,8 +3,13 @@
     <div class="home__info">
       <h2>Hello! My name is</h2>
       <h1>Mergim Ujkani</h1>
-      <p>I'm a Front-end web developer, very passionate about developing responsive and
-        pixel-perfect websites for all browsers equally.</p>
+      <div>
+        <p>I'm a Frontend engineer painting with code. <br>
+          Creating eye pleasing UI with great details.<br>
+          Curious about the web in the future and its upcoming technologies.
+        </p>
+        <span class="home__time">{{ time }}</span>
+      </div>
       <div class="home__info__social-networks">
         <div class="home__social-networks">
           <a target="_blank"
@@ -25,7 +30,32 @@
   </div>
 </template>
 
-<style lang="scss">
-  // Home
+<script>
+export default {
+  data() {
+    return {
+      time: null
+    }
+  },
+  mounted() {
+    this.calcTime('+1');
 
+    setInterval(() => {
+      this.calcTime('+1');
+    }, 1000);
+  },
+
+  methods: {
+    calcTime(offset) {
+      var d = new Date();
+      var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+      var nd = new Date(utc + (3600000 * offset));
+      return this.time = `${nd.getHours()}:${nd.getMinutes()}:${nd.getSeconds()} ${d.getHours() >= 12 ? 'pm' : 'am'} - Kosovo, Prishtina`;
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+// Home
 </style>
