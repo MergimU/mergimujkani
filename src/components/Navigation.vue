@@ -31,7 +31,6 @@ export default {
           } else {
             nav.style.opacity = '1';
           }
-          console.log(e);
           cache = null;
         }, 300);
         cache = e;
