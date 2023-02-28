@@ -47,10 +47,14 @@ export default {
 
   methods: {
     calcTime(offset) {
-      var d = new Date();
-      var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-      var nd = new Date(utc + (3600000 * offset));
-      return this.time = `${nd.getHours()}:${nd.getMinutes()}:${nd.getSeconds()} ${d.getHours() >= 12 ? 'pm' : 'am'} - Kosovo, Prishtina`;
+      let d = new Date();
+      let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+      let nd = new Date(utc + (3600000 * offset));
+      let hours = nd.getHours().toString().padStart('2', 0);
+      let minutes = nd.getMinutes().toString().padStart('2', 0);
+      let seconds = nd.getSeconds().toString().padStart('2', 0);
+
+      return this.time = `${hours}:${minutes}:${seconds} ${d.getHours() >= 12 ? 'pm' : 'am'} - Kosovo, Prishtina`;
     }
   }
 }
