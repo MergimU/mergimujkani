@@ -34,30 +34,30 @@
 export default {
   data() {
     return {
-      time: null
-    }
+      time: null,
+    };
   },
   mounted() {
-    this.calcTime('+1');
+    this.calcTime('+2');
 
     setInterval(() => {
-      this.calcTime('+1');
+      this.calcTime('+2');
     }, 1000);
   },
 
   methods: {
     calcTime(offset) {
-      let d = new Date();
-      let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-      let nd = new Date(utc + (3600000 * offset));
-      let hours = nd.getHours().toString().padStart('2', 0);
-      let minutes = nd.getMinutes().toString().padStart('2', 0);
-      let seconds = nd.getSeconds().toString().padStart('2', 0);
+      const d = new Date();
+      const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+      const nd = new Date(utc + (3600000 * offset));
+      const hours = nd.getHours().toString().padStart('2', 0);
+      const minutes = nd.getMinutes().toString().padStart('2', 0);
+      const seconds = nd.getSeconds().toString().padStart('2', 0);
 
-      return this.time = `${hours}:${minutes}:${seconds} ${d.getHours() >= 12 ? 'pm' : 'am'} - Kosovo, Prishtina`;
-    }
-  }
-}
+      this.time = `${hours}:${minutes}:${seconds} ${d.getHours() >= 12 ? 'pm' : 'am'} - Kosovo, Prishtina`;
+    },
+  },
+};
 </script>
 
 <style lang="scss">
