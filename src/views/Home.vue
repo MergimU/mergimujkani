@@ -1,6 +1,8 @@
 <template>
   <div class="home">
     <div class="home__info">
+      <input type="text"
+             value="fdsafdsa fdsafdsa">
       <h2>Hello! My name is</h2>
       <h1>Mergim Ujkani</h1>
       <div>
@@ -16,11 +18,15 @@
              href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
              title="Linkedin">
             <img src="@/assets/images/socials/linkedin-icon.svg"
+                 width="40px"
+                 height="20px"
                  alt="Linkedin">
           </a>
           <a target="_blank"
              href="https://codepen.io/MergimUjkani">
             <img src="@/assets/images/socials/codepen-icon.svg"
+                 width="40px"
+                 height="20px"
                  alt="Codepen"
                  title="Codepen">
           </a>
