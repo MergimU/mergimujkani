@@ -1,8 +1,6 @@
 <template>
   <div class="home">
     <div class="home__info">
-      <input type="text"
-             value="fdsafdsa fdsafdsa">
       <h2>Hello! My name is</h2>
       <h1>Mergim Ujkani</h1>
       <div>
