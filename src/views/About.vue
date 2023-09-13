@@ -6,7 +6,9 @@
         Name: Mergim Ujkani <br>
         Location: Kosovo <br>
         Contact: <a href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
-           target="_blank">https://www.linkedin.com</a>
+           target="_blank">https://www.linkedin.com</a> <br>
+        CV: <a href="https://drive.google.com/file/d/1l-PPOaCvMSKziFfyqp3KUnDZ5iI8TMsh/view?usp=drive_link"
+           target="_blank">Mergim Ujkani</a>
         <br>
         <br>
         Summary:
