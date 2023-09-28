@@ -7,7 +7,7 @@
         Location: Kosovo <br>
         Contact: <a href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
            target="_blank">https://www.linkedin.com</a> <br>
-        CV: <a href="https://drive.google.com/file/d/1l-PPOaCvMSKziFfyqp3KUnDZ5iI8TMsh/view?usp=drive_link"
+        CV: <a href="https://drive.google.com/file/d/1s2T8k6MN4P20S7oamYVxu7YcmkNvqDA4/view?usp=drive_link"
            target="_blank">Mergim Ujkani</a>
         <br>
         <br>
