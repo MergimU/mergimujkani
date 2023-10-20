@@ -23,7 +23,7 @@
         <br />
         - Proficient in JavaScript, React, HTML, and CSS<br />
         - Experience with modern web development tools such as Webpack and Babel.<br />
-        - Proficient in design tools such as Sketch and Adobe XD.<br />
+        - Proficient in design tools such as Figma and Adobe XD.<br />
         - Strong problem-solving and communication skills.<br />
       </p>
     </div>
