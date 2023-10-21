@@ -8,7 +8,10 @@
           Creating eye pleasing UI with great details.<br>
           Curious about the web in the future and its upcoming technologies.
         </p>
-        <span class="home__time">{{ time }}</span>
+
+        <p class="home__time">
+          <span>{{ time }}</span> <span> - Kosovo, Prishtina</span>
+        </p>
       </div>
       <div class="home__info__social-networks">
         <div class="home__social-networks">
@@ -58,7 +61,7 @@ export default {
       const minutes = nd.getMinutes().toString().padStart('2', 0);
       const seconds = nd.getSeconds().toString().padStart('2', 0);
 
-      this.time = `${hours}:${minutes}:${seconds} ${d.getHours() >= 12 ? 'pm' : 'am'} - Kosovo, Prishtina`;
+      this.time = `${hours}:${minutes}:${seconds} ${d.getHours() >= 12 ? 'pm' : 'am'}`;
     },
   },
 };

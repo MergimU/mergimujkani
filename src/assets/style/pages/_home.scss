@@ -33,6 +33,15 @@
         color: var(--text-color-2);
         padding-top: 20px;
         display: block;
+
+        span {
+            font-size: 16px;
+
+            &:nth-child(1) {
+                display: inline-block;
+                width: 89px;
+            }
+        }
     }
 
     h2 {

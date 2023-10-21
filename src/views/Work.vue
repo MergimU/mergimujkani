@@ -71,8 +71,8 @@
              target="_blank">Visit website</a>
         </div>
         <div class="work__worked-for__logo">
-          <img src="@/assets/images/illustrations/codepen.svg"
-               alt="Codepen">
+          <img src="@/assets/images/logos/logo-linky.svg"
+               alt="Linky">
         </div>
       </div>
     </div>
