@@ -1,0 +1,34 @@
+.about {
+	height: 100vh;
+
+	&__container {
+		width: 100%;
+		max-width: var(--container);
+		margin: 0 auto;
+		padding: 12.5rem 1.25rem 3.125rem 1.25rem;
+
+		@media screen and (max-width: 37.5rem) {
+			padding-top: 9rem;
+		}
+	}
+
+	&__title {
+		color: #353535;
+		padding-bottom: 2.5rem;
+		font-weight: 600;
+	}
+
+	&__description {
+		background-color: #fff;
+		box-shadow: .375rem .1875rem 1.5rem 0 #3c005b1a;
+		border-radius: 1.25rem;
+		color: var(--text-color-1);
+		font-size: var(--font-size-5);
+		line-height: 2.125rem;
+		padding: 1.875rem;
+
+		a {
+			color: inherit;
+		}
+	}
+}
