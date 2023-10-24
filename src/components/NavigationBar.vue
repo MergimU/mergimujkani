@@ -1,30 +1,26 @@
 <script lang="ts">
-import { RouterLink } from 'vue-router'
-
 export default {
-  // mounted() {
-  //   const nav = document.querySelector('.navigation');
-  //   const menuToggle = 110;
-
-  //   let cache: any = null;
-  //   window.addEventListener('scroll', (e) => {
-  //     if (!cache) {
-  //       setTimeout(() => {
-  //         // Add all the code
-  //         const positionY = window.pageYOffset;
-  //         if (positionY > menuToggle) {
-  //           nav.style.opacity = '0';
-  //         } else {
-  //           nav.style.opacity = '1';
-  //         }
-  //         cache = null;
-  //       }, 300);
-  //       cache = e;
-  //     }
-  //   });
-  // },
+  mounted() {
+    const nav = document.querySelector('.navigation') as HTMLElement;
+    const menuToggle = 30;
+    let cache: Event | null = null;
+    window.addEventListener('scroll', (e) => {
+      if (!cache) {
+        setTimeout(() => {
+          // Add all the code
+          const positionY = window.scrollY;
+          if (positionY > menuToggle) {
+            nav.style.opacity = '0';
+          } else {
+            nav.style.opacity = '1';
+          }
+          cache = null;
+        }, 300);
+        cache = e;
+      }
+    });
+  },
 };
-
 </script>
 
 <template>
