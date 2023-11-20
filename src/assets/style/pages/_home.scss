@@ -67,5 +67,9 @@
         font-size: var(--font-size-4);
         padding-top: 1.875rem;
         line-height: 2.375rem;
+
+        strong {
+            font-weight: bold;
+        }
     }
 }

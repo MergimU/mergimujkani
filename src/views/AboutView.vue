@@ -13,7 +13,9 @@
         <br>
         Summary:
         <br>
-        Experienced front end developer with over 6 years of experience working with web frameworks such as React and
+        Experienced <strong>Senior front end developer</strong> with over 6 years of experience working with web
+        frameworks such as
+        React and
         Vue. Passionate about CSS and UI design, with a strong focus on creating intuitive and visually appealing
         web applications. <br>
         Skilled in modern web development techniques, including responsive design, accessibility,

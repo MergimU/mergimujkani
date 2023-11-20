@@ -34,7 +34,7 @@ export default {
       <h2>Hello! My name is</h2>
       <h1>Mergim Ujkani</h1>
       <div>
-        <p>I'm a Frontend engineer painting with code. <br>
+        <p><strong>Senior front end developer</strong> painting with code. <br>
           Creating eye pleasing UI with great details.<br>
           Curious about the web in the future and its upcoming technologies.
         </p>
