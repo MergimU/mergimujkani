@@ -13,7 +13,7 @@
         <br>
         Summary:
         <br>
-        Experienced <strong>Mid-level Front-End Developer</strong> with over 6 years of experience working with web
+        Experienced <strong>Software Engineer</strong> with over 6 years of experience working with web
         frameworks such as
         React and
         Vue. Passionate about CSS and UI design, with a strong focus on creating intuitive and visually appealing
