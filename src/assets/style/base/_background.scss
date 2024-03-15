@@ -1,7 +1,18 @@
 body {
-    // background-image: url('~@/assets/images/illustrations/blob-scene-haikei-2-1.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #000000;
+    background-image: radial-gradient(#8c90ccbc 0.5px, #000000 0.5px);
+    background-size: 10px 10px;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
 }
