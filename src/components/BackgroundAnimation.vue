@@ -19,6 +19,7 @@
 .svg-anim-1,
 .svg-anim-2,
 .svg-anim-3 {
+  display: none;
   position: fixed;
   z-index: -1;
   transition: .3s;

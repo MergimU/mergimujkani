@@ -1,25 +1,77 @@
 .home {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #353535;
+    color: var(--text-color-1);
+    padding-top: 11.25rem;
+
+    @media screen and (min-width: 48rem) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 18.75rem;
+        height: 18.75rem;
+        border-radius: 50%;
+        background-color: #fff;
+        background-image: radial-gradient(#444df7bc .0313rem, #000000 .0313rem);
+        background-size: .625rem .625rem;
+    }
 
     &__info {
         padding: 0 1.25rem;
-        max-width: var(--container);
+        max-width: 37.5rem;
+        position: relative;
+
+        @media screen and (min-width: 48rem) {
+            text-align: center;
+        }
+
+
+        &__brackets {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+
+            @media screen and (max-width: 48rem) {
+                display: none;
+            }
+
+            svg {
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+
+            .icon-bracket-open {
+                right: 90%;
+            }
+
+            .icon-bracket-close {
+                left: 90%;
+            }
+        }
 
         &__social-networks {
             padding-top: 2.5rem;
-            position: absolute;
-            bottom: 3.125rem;
-            right: 3.125rem;
+            padding-bottom: 1.875rem;
+
+            @media screen and (min-width: 48rem) {
+                position: absolute;
+                bottom: 3.125rem;
+                right: 3.125rem;
+                text-align: center;
+                padding-bottom: 0;
+            }
 
             img {
                 padding-left: 1.25rem;
                 height: 1.25rem;
-                opacity: .6;
                 transition: .2s;
 
                 &:hover {
@@ -30,7 +82,8 @@
     }
 
     &__time {
-        color: var(--text-color-2);
+        color: var(--text-color-1);
+        opacity: .6;
         padding-top: 20px;
         display: block;
 
@@ -38,8 +91,7 @@
             font-size: 16px;
 
             &:nth-child(1) {
-                display: inline-block;
-                width: 89px;
+                font-variant: tabular-nums;
             }
         }
     }

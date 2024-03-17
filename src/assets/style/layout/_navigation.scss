@@ -4,7 +4,7 @@
 	right: 3.125rem;
 	transition: .2s;
 
-	@media screen and (max-width: 37.5rem) {
+	@media screen and (max-width: 48rem) {
 		right: auto;
 		left: 0;
 	}
@@ -25,7 +25,7 @@
 
 				&:hover,
 				&.router-link-exact-active {
-					box-shadow: 10px 10px 0 0 black;
+					box-shadow: 10px 10px 0 0 var(--color-secondary);
 				}
 			}
 		}

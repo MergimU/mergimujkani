@@ -1,10 +1,12 @@
 :root {
     // Text Colors
-    --text-color-1: #353535;
-    --text-color-2: #707070;
+    --text-color-1: #f7f7f7;
+    --text-color-2: #4c4c4c;
 
     // Colors
     --color-primary: #353535;
+    --color-secondary: cyan;
+    --color-secondary: purple;
 
     // Font-sizes
     --font-size-1: 3rem;
@@ -15,7 +17,7 @@
     --font-size-6: .5rem;
 
     // General styles
-    --container: 37.5rem;
+    --container: 50rem;
 
     @media (max-width: 43.75rem) {
         --font-size-4: 1.25rem;

@@ -46,7 +46,7 @@
       <div class="work__worked-for">
         <div class="work__worked-for__info">
           <h4>Codepen</h4>
-          <p>Projects I've built for fun</p>
+          <p>Playing with CSS in my free time</p>
           <a class="btn btn--primary btn--primary"
              href="https://codepen.io/MergimUjkani"
              target="_blank">Visit website</a>
