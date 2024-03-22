@@ -86,6 +86,7 @@ export default {
             <span class="home__time__date-location">{{ animatedText.animatedTextResult }}</span>
             <span class="home__time__blinker"></span>
           </p>
+          <br>
         </div>
       </div>
     </div>
