@@ -1,9 +1,16 @@
 <script lang="ts">
 
 export default {
+  name: 'Homeview',
   data() {
     return {
       time: '',
+      animatedText: {
+        text: '',
+        animatedTextResult: '',
+        iterationValue: 0,
+        speed: 50,
+      }
     };
   },
   mounted() {
@@ -12,13 +19,36 @@ export default {
     setInterval(() => {
       this.calcTime();
     }, 1000);
+
+    setTimeout(() => {
+      const animatingTextInterval = setInterval(() => {
+        if (this.animatedText.text.length === this.animatedText.animatedTextResult.length) {
+          clearInterval(animatingTextInterval);
+          this.calcTime();
+
+        } else {
+          this.animateTypingText();
+
+        }
+
+      }, this.animatedText.speed)
+
+    }, 500)
   },
 
   methods: {
     calcTime() {
       const kosovo_time_zone = new Date().toLocaleString('en-US', { timeZone: 'Europe/Belgrade', timeStyle: 'long', hourCycle: 'h24' })
       this.time = kosovo_time_zone;
+      this.animatedText.text = `${kosovo_time_zone} - Kosovo, Prishtina`;
     },
+
+    animateTypingText() {
+      if (this.animatedText.iterationValue < this.animatedText.text.length) {
+        this.animatedText.animatedTextResult += this.animatedText.text.charAt(this.animatedText.iterationValue);
+        this.animatedText.iterationValue = this.animatedText.iterationValue + 1;
+      }
+    }
   },
 };
 </script>
@@ -42,38 +72,40 @@ export default {
                 fill="var(--color-secondary)" />
         </svg>
       </div>
-      <h2>Hello! My name is</h2>
-      <h1>Mergim Ujkani</h1>
-      <div>
-        <p><strong>Software Engineer</strong> painting with code. <br>
-          Creating eye pleasing UI with great details.<br>
-          Curious about the web in the future and its upcoming technologies.
-        </p>
+      <div class="home__info__about-me">
+        <h2>Hello! My name is:</h2>
+        <h1>Mergim Ujkani</h1>
+        <div>
+          <p>
+            I'm a passionate <strong>Software Engineer</strong> with a knack for problem-solving and a love for elegant
+            code. With years of experience in the industry, I've had the opportunity to work on a variety of projects
+            spanning web development, mobile applications, and beyond.
+          </p>
 
-        <p class="home__time">
-          <span>{{ time }}</span> <span> - Kosovo, Prishtina</span>
-        </p>
+          <p class="home__time">
+            <span class="home__time__date-location">{{ animatedText.animatedTextResult }}</span>
+            <span class="home__time__blinker"></span>
+          </p>
+        </div>
       </div>
     </div>
-    <div class="home__info__social-networks">
-      <div class="home__social-networks">
-        <a target="_blank"
-           href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
-           title="Linkedin">
-          <img src="@/assets/images/socials/linkedin-icon.svg"
-               width="40px"
-               height="20px"
-               alt="Linkedin">
-        </a>
-        <a target="_blank"
-           href="https://codepen.io/MergimUjkani">
-          <img src="@/assets/images/socials/codepen-icon.svg"
-               width="40px"
-               height="20px"
-               alt="Codepen"
-               title="Codepen">
-        </a>
-      </div>
+    <div class="home__social-networks">
+      <a target="_blank"
+         href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
+         title="Linkedin">
+        <img src="@/assets/images/socials/linkedin-icon.svg"
+             width="2.5rem"
+             height="1.25rem"
+             alt="Linkedin">
+      </a>
+      <a target="_blank"
+         href="https://codepen.io/MergimUjkani">
+        <img src="@/assets/images/socials/codepen-icon.svg"
+             width="2.5rem"
+             height="1.25rem"
+             alt="Codepen"
+             title="Codepen">
+      </a>
     </div>
   </div>
 </template>
