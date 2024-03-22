@@ -5,7 +5,7 @@
       <div class="work__worked-for">
         <div class="work__worked-for__info">
           <h4>Solidfi</h4>
-          <p>Software Engineer / web-app / (4 years)</p>
+          <p>Software Engineer / Fintech / (4 years)</p>
           <a class="btn btn--primary btn--primary"
              href="https://www.solidfi.com/"
              target="_blank">Visit website</a>
@@ -18,7 +18,7 @@
       <div class="work__worked-for">
         <div class="work__worked-for__info">
           <h4>UNE</h4>
-          <p>Software Engineer / websites / (1 year and 5 months)</p>
+          <p>Software Engineer / Web Agency / (1 year and 5 months)</p>
           <a class="btn btn--primary btn--primary"
              href="https://une.ch/"
              target="_blank">Visit website</a>
@@ -31,7 +31,7 @@
       <div class="work__worked-for work__worked-for--space">
         <div class="work__worked-for__info">
           <h4>Splashdata</h4>
-          <p>Front-End Developer / web-app / (3 years and 8 months)</p>
+          <p>Front-End Developer / Password manager / (3 years and 8 months)</p>
           <a class="btn btn--primary btn--primary"
              href="https://www.splashdata.com/"
              target="_blank">Visit website</a>

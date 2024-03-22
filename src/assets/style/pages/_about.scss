@@ -19,7 +19,7 @@
 	}
 
 	&__description {
-		background-image: radial-gradient(rgb(70 73 127 / 74%) 0.5px, #ffffff 0.5px);
+		background-image: radial-gradient(rgb(220 220 220 / 74%) 0.5px, #ffffff 0.5px);
 		background-size: 0.625rem 0.625rem;
 		background-attachment: fixed;
 		box-shadow: 5px 5px 40px 0.625rem #8080807a;
@@ -35,21 +35,39 @@
 		a {
 			color: inherit;
 		}
-	}
 
-	.boxes {
-		position: absolute;
-		// background-color: var(--color-secondary);
-		top: -1.6875rem;
-		left: -1.6875rem;
-		width: 5rem;
-		color: #940394;
-
-		div {
-			width: inherit;
-			height: inherit;
+		&__boxes-container {
 			position: absolute;
-			background-color: inherit;
+			top: -1.6875rem;
+			left: -1.6875rem;
+			width: 5rem;
+			height: 5rem;
+			color: #940394;
+			animation: rotateSVG .5s ease-in forwards;
+
+
+			svg {
+				width: inherit;
+				height: inherit;
+				position: absolute;
+				background-color: inherit;
+			}
+
+			&__animate-box {
+				position: absolute;
+				top: 26px;
+				left: 53px;
+				background-color: red;
+				width: 27px;
+				height: 27px;
+			}
 		}
+
+	}
+}
+
+@keyframes rotateSVG {
+	to {
+		transform: rotate(0deg);
 	}
 }

@@ -13,6 +13,9 @@
 		display: flex;
 
 		li {
+			opacity: 0;
+			transition: .4s;
+			animation: navItem .3s ease-in-out forwards;
 
 			a {
 				color: var(--text-color-1);
@@ -29,5 +32,11 @@
 				}
 			}
 		}
+	}
+}
+
+@keyframes navItem {
+	to {
+		opacity: 1;
 	}
 }

@@ -1,9 +1,39 @@
 @mixin rem($key, $value) {
-    #{$key}: ($value / 16) + rem;
+  #{$key}: ($value / 16) + rem;
 }
 
 @mixin center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 48rem) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 48rem) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
