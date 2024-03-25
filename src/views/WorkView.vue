@@ -66,7 +66,7 @@
           <p>Playing with CSS in my free time</p>
           <a class="btn-glow"
              href="https://codepen.io/MergimUjkani"
-             target="_blank">Visit website</a>
+             target="_blank">Go to CodePen</a>
         </div>
         <div class="work__worked-for__logo">
           <img src="@/assets/images/illustrations/codepen.svg"
@@ -86,7 +86,7 @@
           </p>
           <a class="btn-glow"
              href="https://chrome.google.com/webstore/detail/linky/alfhdmidbiiklpndmlgakcheoojncdja?hl=en-US"
-             target="_blank">Visit website</a>
+             target="_blank">Go to extension</a>
         </div>
         <div class="work__worked-for__logo">
           <img src="@/assets/images/logos/logo-linky.svg"

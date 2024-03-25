@@ -26,8 +26,8 @@
 	}
 
 	&__worked-for {
-		background-image: radial-gradient(rgb(220 220 220 / 74%) 0.5px, #ffffff 0.5px);
-		background-size: 10px 10px;
+		background-image: radial-gradient(rgb(220 220 220 / 74%) .0313rem, #ffffff .0313rem);
+		background-size: .625rem .625rem;
 		background-attachment: fixed;
 		box-shadow: .375rem .1875rem 1.5rem 0 #3c005b1a;
 		border-radius: .3125rem;
@@ -102,7 +102,7 @@
 			padding-right: 1.625rem;
 
 			h4 {
-				padding-top: .5rem;
+				padding: .5rem 0;
 				font-weight: 600;
 			}
 

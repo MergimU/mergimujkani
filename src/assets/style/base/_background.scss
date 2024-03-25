@@ -4,18 +4,18 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: monospace;
+  scroll-behavior: smooth;
 
   &::before {
     content: '';
     background-image: url('@/assets/images/illustrations/cyberpunk-1.svg');
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: #fff;
     position: fixed;
     display: block;
     inset: 0;
-    overflow-y: scroll;
     opacity: 0.2;
     overflow: hidden;
     z-index: -1;
@@ -25,10 +25,8 @@ body {
 
 .background {
   &__overlay-bg {
-    width: 200px;
-    height: 200px;
-    top: -200px;
-    left: -200px;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
     position: absolute;
     overflow: hidden;
@@ -58,7 +56,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 1.25rem rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
