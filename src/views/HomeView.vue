@@ -73,11 +73,11 @@ export default {
         </svg>
       </div>
       <div class="home__info__about-me">
-        <h2>Hello! My name is:</h2>
+        <h2>My name is</h2>
         <h1>Mergim Ujkani</h1>
         <div>
           <p>
-            I'm a passionate <strong>Software Engineer</strong> with a knack for problem-solving and a love for elegant
+            A passionate <strong>Software Engineer</strong> with a knack for problem-solving and a love for elegant
             code. With years of experience in the industry, I've had the opportunity to work on a variety of projects
             spanning web development, mobile applications, and beyond.
           </p>

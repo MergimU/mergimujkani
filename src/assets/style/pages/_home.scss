@@ -103,7 +103,6 @@
       justify-content: flex-start;
     }
 
-
     &__date-location {
       font-size: 1rem;
       opacity: .6;
@@ -126,7 +125,7 @@
   h2 {
     font-size: var(--font-size-3);
 
-    @media screen and (max-width: 47.9375rem) {
+    @include for-phone-only {
       line-height: 2.1875rem;
     }
   }
@@ -134,17 +133,16 @@
   h1 {
     font-weight: bold;
     line-height: 2.8125rem;
-
-    @media screen and (max-width: 47.9375rem) {
-      padding-top: 1.25rem;
-      line-height: 3.125rem;
-    }
   }
 
   p {
     font-size: var(--font-size-5);
     padding-top: 1.875rem;
     line-height: 2.375rem;
+
+    @include for-phone-only {
+      line-height: 1.7rem;
+    }
 
     strong {
       font-weight: bold;
