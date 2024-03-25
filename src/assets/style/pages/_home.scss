@@ -19,7 +19,7 @@
     height: 18.75rem;
     border-radius: 50%;
     background-color: #fff;
-    background-image: radial-gradient(rgb(220 220 220 / 74%) 0.5px, #ffffff 0.5px);
+    background-image: radial-gradient(rgb(220 220 220 / 74%) .0313rem, #ffffff .0313rem);
     background-size: .625rem .625rem;
   }
 
@@ -55,13 +55,13 @@
 
       .icon-bracket-open {
         right: 90%;
-        transform: translateX(220px);
+        transform: translateX(13.75rem);
         animation: bracketAnimation .6s ease-in-out forwards;
       }
 
       .icon-bracket-close {
         left: 90%;
-        transform: translateX(-220px);
+        transform: translateX(-13.75rem);
         animation: bracketAnimation .6s ease-in-out forwards;
       }
     }
@@ -93,7 +93,7 @@
 
   &__time {
     color: var(--text-color-1);
-    padding-top: 20px;
+    padding-top: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +105,7 @@
 
 
     &__date-location {
-      font-size: 16px;
+      font-size: 1rem;
       opacity: .6;
 
       &:nth-child(1) {
@@ -114,8 +114,8 @@
     }
 
     &__blinker {
-      width: 4px;
-      height: 22px;
+      width: .25rem;
+      height: 1.375rem;
       background-color: #fff;
       display: inline-block;
       opacity: .6;

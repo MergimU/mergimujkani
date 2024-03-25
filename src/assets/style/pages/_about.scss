@@ -22,10 +22,10 @@
 	}
 
 	&__description {
-		background-image: radial-gradient(rgb(220 220 220 / 74%) 0.5px, #ffffff 0.5px);
+		background-image: radial-gradient(rgb(220 220 220 / 74%) .0313rem, #ffffff .0313rem);
 		background-size: 0.625rem 0.625rem;
 		background-attachment: fixed;
-		box-shadow: 5px 5px 40px 0.625rem #8080807a;
+		box-shadow: .3125rem .3125rem 2.5rem 0.625rem #8080807a;
 		border-radius: .3125rem;
 		font-size: var(--font-size-5);
 		line-height: 2.125rem;
@@ -42,7 +42,7 @@
 
 		p {
 			opacity: 0;
-			transform: translateY(10px);
+			transform: translateY(.625rem);
 			animation: fadeUp .6s .3s ease-in-out forwards;
 		}
 
@@ -52,8 +52,8 @@
 
 		&__boxes-container {
 			position: absolute;
-			top: -27px;
-			left: -53px;
+			top: -1.6875rem;
+			left: -3.3125rem;
 			width: 5rem;
 			height: 5rem;
 			color: #940394;
@@ -69,10 +69,10 @@
 
 			&__animate-box {
 				position: absolute;
-				top: 27px;
-				left: 53px;
-				width: 27px;
-				height: 27px;
+				top: 1.6875rem;
+				left: 3.3125rem;
+				width: 1.6875rem;
+				height: 1.6875rem;
 				background-color: #000;
 			}
 		}
@@ -82,7 +82,7 @@
 
 @keyframes rotateSVG {
 	to {
-		transform: translateX(26px);
+		transform: translateX(1.625rem);
 		opacity: 1;
 	}
 }

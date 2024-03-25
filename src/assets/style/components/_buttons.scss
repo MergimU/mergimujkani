@@ -1,9 +1,9 @@
 .btn {
-	border: 1px solid transparent;
+	border: .0625rem solid transparent;
 	display: inline-block;
-	padding: 14px;
+	padding: .875rem;
 	transition: .2s;
-	border: 1px solid transparent;
+	border: .0625rem solid transparent;
 
 	&--primary {
 		background-color: var(--color-secondary);
@@ -21,8 +21,8 @@
 }
 
 .btn-glow {
-	width: 220px;
-	height: 50px;
+	width: 13.75rem;
+	height: 3.125rem;
 	border: none;
 	outline: none;
 	color: purple;
@@ -32,26 +32,23 @@
 	z-index: 0;
 	border-radius: 0;
 	text-align: center;
-	line-height: 50px;
+	line-height: 3.125rem;
 	text-decoration: none;
-	// border: 1px solid purple;
 
 	&:before {
 		content: '';
 		background: linear-gradient(45deg, #7a00ff, #015eb6, #989502, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #510098);
 		position: absolute;
-		top: -2px;
-		left: -2px;
+		top: -0.125rem;
+		left: -0.125rem;
 		background-size: 400%;
 		z-index: -1;
-		filter: blur(5px);
-		width: calc(100% + 4px);
-		height: calc(100% + 4px);
+		filter: blur(.3125rem);
+		width: calc(100% + .25rem);
+		height: calc(100% + .25rem);
 		animation: glowing 20s linear infinite;
-		// opacity: 0;
 		transition: .3s ease-in-out;
 		border-radius: 0;
-
 	}
 
 	&:active {
@@ -59,15 +56,9 @@
 	}
 
 	&:hover {
-		// color: #fff;
-
 		&:before {
 			opacity: 1;
-			filter: blur(10px);
-		}
-
-		&:after {
-			// background-color: purple;
+			filter: blur(.625rem);
 		}
 	}
 
@@ -78,7 +69,6 @@
 		width: 100%;
 		height: 100%;
 		background: #fff;
-
 		left: 0;
 		top: 0;
 		border-radius: 0;
