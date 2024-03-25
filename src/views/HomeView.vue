@@ -8,6 +8,7 @@ export default {
       animatedText: {
         text: '',
         animatedTextResult: '',
+        completedAnimation: false,
         iterationValue: 0,
         speed: 50,
       }
@@ -25,10 +26,9 @@ export default {
         if (this.animatedText.text.length === this.animatedText.animatedTextResult.length) {
           clearInterval(animatingTextInterval);
           this.calcTime();
-
+          this.animatedText.completedAnimation = true;
         } else {
           this.animateTypingText();
-
         }
 
       }, this.animatedText.speed)
@@ -83,7 +83,8 @@ export default {
           </p>
 
           <p class="home__time">
-            <span class="home__time__date-location">{{ animatedText.animatedTextResult }}</span>
+            <span class="home__time__date-location">{{ animatedText.completedAnimation ? animatedText.text :
+              animatedText.animatedTextResult }}</span>
             <span class="home__time__blinker"></span>
           </p>
           <br>
