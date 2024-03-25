@@ -16,6 +16,9 @@
 		color: var(--text-color-1);
 		padding-bottom: 4rem;
 		font-weight: 600;
+		font-size: var(--font-size-3);
+		opacity: 0;
+		animation: fadeIn .6s ease-in-out forwards;
 	}
 
 	&__description {
@@ -23,13 +26,24 @@
 		background-size: 0.625rem 0.625rem;
 		background-attachment: fixed;
 		box-shadow: 5px 5px 40px 0.625rem #8080807a;
+		border-radius: .3125rem;
 		font-size: var(--font-size-5);
 		line-height: 2.125rem;
 		padding: 2.5rem;
 		position: relative;
 
+		@include for-phone-only {
+			padding: 2.5rem 1.5rem;
+		}
+
 		strong {
 			font-weight: bold;
+		}
+
+		p {
+			opacity: 0;
+			transform: translateY(10px);
+			animation: fadeUp .6s .3s ease-in-out forwards;
 		}
 
 		a {
@@ -38,13 +52,13 @@
 
 		&__boxes-container {
 			position: absolute;
-			top: -1.6875rem;
-			left: -1.6875rem;
+			top: -27px;
+			left: -53px;
 			width: 5rem;
 			height: 5rem;
 			color: #940394;
-			animation: rotateSVG .5s ease-in forwards;
-
+			opacity: 0;
+			animation: rotateSVG .5s ease-in-out forwards;
 
 			svg {
 				width: inherit;
@@ -55,11 +69,11 @@
 
 			&__animate-box {
 				position: absolute;
-				top: 26px;
+				top: 27px;
 				left: 53px;
-				background-color: red;
 				width: 27px;
 				height: 27px;
+				background-color: #000;
 			}
 		}
 
@@ -68,6 +82,20 @@
 
 @keyframes rotateSVG {
 	to {
-		transform: rotate(0deg);
+		transform: translateX(26px);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
 	}
 }

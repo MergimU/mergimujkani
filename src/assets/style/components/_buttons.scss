@@ -19,3 +19,83 @@
 		}
 	}
 }
+
+.btn-glow {
+	width: 220px;
+	height: 50px;
+	border: none;
+	outline: none;
+	color: purple;
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 0;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	// border: 1px solid purple;
+
+	&:before {
+		content: '';
+		background: linear-gradient(45deg, #7a00ff, #015eb6, #989502, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #510098);
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		background-size: 400%;
+		z-index: -1;
+		filter: blur(5px);
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		animation: glowing 20s linear infinite;
+		// opacity: 0;
+		transition: .3s ease-in-out;
+		border-radius: 0;
+
+	}
+
+	&:active {
+		color: #000
+	}
+
+	&:hover {
+		// color: #fff;
+
+		&:before {
+			opacity: 1;
+			filter: blur(10px);
+		}
+
+		&:after {
+			// background-color: purple;
+		}
+	}
+
+	&:after {
+		z-index: -1;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+
+		left: 0;
+		top: 0;
+		border-radius: 0;
+		transition: .3s;
+	}
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
