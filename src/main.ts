@@ -1,5 +1,5 @@
 import "./assets/style/_index.scss";
-import "../registerServiceWorker";
+// import "../registerServiceWorker";
 
 import { createApp } from "vue";
 import App from "./App.vue";
