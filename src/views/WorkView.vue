@@ -5,7 +5,7 @@
       <div class="work__worked-for">
         <div class="work__worked-for__info">
           <h4>Solidfi</h4>
-          <p>Software Engineer / Fintech / (4 years)</p>
+          <p>Software Engineer / Fintech / (Feb 2019 - Jan 2023)</p>
           <p>
             <span>- Implemented responsive and dynamic user interfaces using React and Vue</span>
             <span>- Developed and maintained modular, reusable components to ensure code efficiency and
@@ -24,7 +24,7 @@
       <div class="work__worked-for">
         <div class="work__worked-for__info">
           <h4>UNE</h4>
-          <p>Software Engineer / Web Agency / (1 year and 5 months)</p>
+          <p>Software Engineer / Web Agency / (Nov 2017 - Mar 2019)</p>
           <p>
             <span>- Managed asynchronous operations using Axios to fetch and update data.</span>
             <span>- Customized and extended components to match project requirements and design guidelines.</span>
@@ -42,7 +42,7 @@
       <div class="work__worked-for work__worked-for--space">
         <div class="work__worked-for__info">
           <h4>Splashdata</h4>
-          <p>Front-End Developer / Password manager / (3 years and 8 months)</p>
+          <p>Front-End Developer / Password manager / (Feb 2016 - Sep 2019)</p>
           <p>
             <span>- Collaborated with backend developers to integrate frontend components with server-side logic.</span>
             <span>- Actively participated in team meetings, code reviews, and discussions to enhance overall project
