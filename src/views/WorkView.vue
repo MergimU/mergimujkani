@@ -84,6 +84,10 @@
             If you like reading online and have unknown words, then you just highlight a word and options are shown like
             Wikipedia so you can get info for that word.
           </p>
+          <div class="tags">
+            <p class="tags__name">Javascript</p>
+            <p class="tags__name">CSS</p>
+          </div>
           <a class="btn-glow"
              href="https://chrome.google.com/webstore/detail/linky/alfhdmidbiiklpndmlgakcheoojncdja?hl=en-US"
              target="_blank">Go to extension</a>
