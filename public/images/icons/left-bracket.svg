@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+             class="icon flat-color"
+             data-name="Flat Color">
+          <path d="M9 22H7a2 2 0 0 1-2-2v-6a1 1 0 0 0-1-1 1 1 0 0 1 0-2 1 1 0 0 0 1-1V4a2 2 0 0 1 2-2h2a1 1 0 0 1 0 2H7v6a3 3 0 0 1-.77 2A3 3 0 0 1 7 14v6h2a1 1 0 0 1 0 2Z"
+                style="fill:#fff" />
+        </svg>

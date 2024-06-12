@@ -1,0 +1,101 @@
+.about {
+	height: 100vh;
+
+	&__container {
+		width: 100%;
+		max-width: var(--container);
+		margin: 0 auto;
+		padding: 12.5rem 1.25rem 3.125rem 1.25rem;
+
+		@media screen and (max-width: 37.5rem) {
+			padding-top: 9rem;
+		}
+	}
+
+	&__title {
+		color: var(--text-color-1);
+		padding-bottom: 4rem;
+		font-weight: 600;
+		font-size: var(--font-size-3);
+		opacity: 0;
+		animation: fadeIn .6s ease-in-out forwards;
+	}
+
+	&__description {
+		background-image: radial-gradient(rgb(220 220 220 / 74%) .0313rem, #ffffff .0313rem);
+		background-size: 0.625rem 0.625rem;
+		background-attachment: fixed;
+		box-shadow: .3125rem .3125rem 2.5rem 0.625rem #8080807a;
+		border-radius: .3125rem;
+		font-size: var(--font-size-5);
+		line-height: 2.125rem;
+		padding: 2.5rem;
+		position: relative;
+
+		@include for-phone-only {
+			padding: 2.5rem 1.5rem;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
+		p {
+			opacity: 0;
+			transform: translateY(.625rem);
+			animation: fadeUp .6s .3s ease-in-out forwards;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		&__boxes-container {
+			position: absolute;
+			top: -1.6875rem;
+			left: -3.3125rem;
+			width: 5rem;
+			height: 5rem;
+			color: #940394;
+			opacity: 0;
+			animation: rotateSVG .5s ease-in-out forwards;
+
+			svg {
+				width: inherit;
+				height: inherit;
+				position: absolute;
+				background-color: inherit;
+			}
+
+			&__animate-box {
+				position: absolute;
+				top: 1.6875rem;
+				left: 3.3125rem;
+				width: 1.6875rem;
+				height: 1.6875rem;
+				background-color: #000;
+			}
+		}
+
+	}
+}
+
+@keyframes rotateSVG {
+	to {
+		transform: translateX(1.625rem);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
