@@ -1,6 +1,3 @@
-// import '@/app/styles/pages/home.scss'
-import '@/app/styles/index.scss'
-
 import Image from 'next/image'
 
 export default function Home() {
