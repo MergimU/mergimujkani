@@ -8,7 +8,7 @@ body {
 
   &::before {
     content: '';
-    // background-image: url('@/assets/images/illustrations/cyberpunk-1.svg');
+    background-image: url('/images/illustrations/cyberpunk-1.svg');
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -40,7 +40,7 @@ body {
     &::after {
       content: '';
       display: block;
-      // background-image: url('@/assets/images/illustrations/cyberpunk-mini.webp');
+      background-image: url('/images/illustrations/cyberpunk-mini.webp');
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
