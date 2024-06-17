@@ -9,7 +9,7 @@ export default function About() {
               fill="none"
               viewBox="0 0 300 300"
               className="styles_svg__aRauV" >
-              <g clip-path="url(#variant-1_svg__clip0)">
+              <g clipPath="url(#variant-1_svg__clip0)">
                 <path className="variant-1_svg__tetris-dark-path"
                   fill="var(--color-secondary)"
                   d="M100 200H0v100h100V200zm100-100H100v100h100V100zM300 0H200v100h100V0z"></path>
@@ -29,9 +29,9 @@ export default function About() {
                   height="140"
                   x="84"
                   y="-12"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse">
-                  <feFlood flood-opacity="0"
+                  <feFlood floodOpacity="0"
                     result="BackgroundImageFix"></feFlood>
                   <feColorMatrix in="SourceAlpha"
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>

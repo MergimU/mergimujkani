@@ -1,4 +1,5 @@
 import BackgroundAnimation from '../_components/BackgroundAnimation';
+import Navigation from '../_components/Navigation';
 
 export default function Layout({
   children,
@@ -7,6 +8,7 @@ export default function Layout({
 }>) {
   return (
     <>
+      <Navigation />
       <BackgroundAnimation />
       {children}
     </>
