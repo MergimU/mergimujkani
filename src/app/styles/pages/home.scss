@@ -34,7 +34,7 @@
 
     &__about-me {
       opacity: 0;
-      animation: fadeIn .3s .2s ease-in-out forwards;
+      animation: fadeIn .3s .4s ease-in-out forwards;
     }
 
 
@@ -56,13 +56,13 @@
       .icon-bracket-open {
         right: 90%;
         transform: translateX(13.75rem);
-        animation: bracketAnimation .6s ease-in-out forwards;
+        animation: bracketAnimation .6s .2s ease-in-out forwards;
       }
 
       .icon-bracket-close {
         left: 90%;
         transform: translateX(-13.75rem);
-        animation: bracketAnimation .6s ease-in-out forwards;
+        animation: bracketAnimation .6s .2s ease-in-out forwards;
       }
     }
   }

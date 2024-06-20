@@ -1,6 +1,55 @@
-// import Image from 'next/image'
+'use client';
 
-export default function Home() {
+import React, { useState, useEffect } from 'react';
+
+const Homeview = () => {
+  const [animatedText, setAnimatedText] = useState({
+    text: '',
+    animatedTextResult: '',
+    completedAnimation: false,
+    iterationValue: 0,
+    speed: 50,
+  });
+
+  useEffect(() => {
+    const updateTime = () => {
+      const kosovoTimeZone = new Date().toLocaleString('en-US', {
+        timeZone: 'Europe/Pristina',
+        timeStyle: 'long',
+        hourCycle: 'h24',
+      });
+      setAnimatedText((prevText) => ({
+        ...prevText,
+        text: `${kosovoTimeZone} - Kosovo, Prishtina`,
+      }));
+    };
+
+    updateTime();
+    const intervalId = setInterval(updateTime, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    if (animatedText.text.length === animatedText.animatedTextResult.length) return;
+
+    const animateTypingText = () => {
+      if (animatedText.iterationValue < animatedText.text.length) {
+        setAnimatedText((prevText) => ({
+          ...prevText,
+          animatedTextResult: prevText.animatedTextResult + prevText.text.charAt(prevText.iterationValue),
+          iterationValue: prevText.iterationValue + 1,
+        }));
+      } else {
+        clearInterval(intervalId);
+      }
+    };
+
+    const intervalId = setInterval(animateTypingText, animatedText.speed);
+
+    return () => clearInterval(intervalId);
+  }, [animatedText]);
+
   return (
     <div className="home">
       <div className="home__info">
@@ -29,34 +78,21 @@ export default function Home() {
               code. With years of experience in the industry, I've had the opportunity to work on a variety of projects
               spanning web development, mobile applications, and beyond.
             </p>
-
-            {/* <p className="home__time">
-            <span className="home__time__date-location">{{ animatedText.completedAnimation ? animatedText.text :
-              animatedText.animatedTextResult }}</span>
-            <span className="home__time__blinker"></span>
-          </p> */}
-            <br></br>
+            <p className="home__time">
+              <span className="home__time__date-location">
+                {animatedText.completedAnimation ? animatedText.text : animatedText.animatedTextResult}
+              </span>
+              <span className="home__time__blinker"></span>
+            </p>
+            <br />
           </div>
         </div>
       </div>
-      {/* <div className="home__social-networks">
-        <a target="_blank"
-          href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
-          title="Linkedin">
-          <img src="@/assets/images/socials/linkedin-icon.svg"
-            width="2.5rem"
-            height="1.25rem"
-            alt="Linkedin">
-        </a>
-        <a target="_blank"
-          href="https://codepen.io/MergimUjkani">
-          <img src="@/assets/images/socials/codepen-icon.svg"
-            width="2.5rem"
-            height="1.25rem"
-            alt="Codepen"
-            title="Codepen">
-        </a>
-      </div> */}
+      <div className="home__social-networks">
+        {/* Add your social media links here */}
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Homeview;
