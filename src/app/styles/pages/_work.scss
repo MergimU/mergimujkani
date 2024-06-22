@@ -118,6 +118,16 @@
 				display: inline-block;
 				margin-bottom: .375rem;
 			}
+
+			ol {
+				padding-top: 1.25rem;
+
+				li {
+					list-style-type: circle;
+					padding-bottom: 1.25rem;
+					line-height: 1.125rem
+				}
+			}
 		}
 
 		&__logo {

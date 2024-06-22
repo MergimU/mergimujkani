@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Homeview = () => {
   const [animatedText, setAnimatedText] = useState({
@@ -14,7 +15,7 @@ const Homeview = () => {
   useEffect(() => {
     const updateTime = () => {
       const kosovoTimeZone = new Date().toLocaleString('en-US', {
-        timeZone: 'Europe/Pristina',
+        timeZone: 'Europe/Belgrade',
         timeStyle: 'long',
         hourCycle: 'h24',
       });
@@ -89,7 +90,15 @@ const Homeview = () => {
         </div>
       </div>
       <div className="home__social-networks">
-        {/* Add your social media links here */}
+        <a target="_blank"
+          href="https://www.linkedin.com/in/mergim-ujkani-5007b783/"
+          title="Linkedin">
+          <Image alt="Linkedin" src={"/images/socials/linkedin-icon.svg"} width={20} height={20} style={{ width: '20px', height: '20px' }} />
+        </a>
+        <a target="_blank"
+          href="https://codepen.io/MergimUjkani">
+          <Image alt="Linkedin" src={"/images/socials/codepen-icon.svg"} width={20} height={20} style={{ width: '20px', height: '20px' }} />
+        </a>
       </div>
     </div>
   );

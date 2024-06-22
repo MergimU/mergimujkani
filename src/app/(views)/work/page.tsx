@@ -1,4 +1,11 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Mergim Ujkani - About me",
+  description: "Experienced Software Engineer with over 6 years of experience working with web frameworks such as React and Vue. Passionate about creating reliable and visually appealing web applications.  Skilled in modern web development techniques, including responsive design, accessibility, and performance optimization. Seeking a challenging role at a company that values creativity and innovation.",
+  keywords: "Software Engineer, React, React Native, NextJS, Styled Components, CSS, SCSS, VueJS, UI, Front End, Web Developer, Front End Web Developer, Website, Web-app, SVG, Animations, Responsive, Web Design, Codepen, Netlify"
+};
 
 export default function Work() {
   return (
@@ -74,6 +81,7 @@ export default function Work() {
         </div>
         <div className="work__worked-for">
           <div className="work__worked-for__info">
+            {/* <div className="work__worked-for__info">
             <h4>Linky</h4>
             <p><span>Chrome extension:</span> <br />During web browsing you encounter an item that you want to purchase,
               you
@@ -82,6 +90,28 @@ export default function Work() {
               <br /> <br />
               If you like reading online and have unknown words, then you just highlight a word and options are shown like
               Wikipedia so you can get info for that word.
+            </p>
+            <div className="tags">
+              <p className="tags__name">Javascript</p>
+              <p className="tags__name">CSS</p>
+            </div>
+            <a className="btn-glow"
+              href="https://chrome.google.com/webstore/detail/linky/alfhdmidbiiklpndmlgakcheoojncdja?hl=en-US"
+              target="_blank">Go to extension</a>
+          </div> */}
+            <h4>Linky</h4>
+            <p><span>Chrome extension:</span> <br />
+              <strong>Tired of searching for the best deals or struggling with unfamiliar words while browsing?</strong><br /> <br />
+              This Chrome extension simplifies your online experience:
+              <ol>
+                <li>
+                  Effortless Price Comparison: Just highlight an item you'd like to buy, and the extension displays purchase options from various retailers, helping you find the best deal.
+                </li>
+                <li>
+                  Instant Word Definitions: Encountered an unfamiliar word? Simply highlight it, and the extension displays definitions and information from trusted sources like Wikipedia, saving you time and keeping you informed.
+                </li>
+
+              </ol>
             </p>
             <div className="tags">
               <p className="tags__name">Javascript</p>
