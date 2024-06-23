@@ -1,0 +1,35 @@
+:root {
+  // Text Colors
+  --text-color-1: #f7f7f7;
+  --text-color-2: #4c4c4c;
+
+  // Colors
+  --color-primary: #353535;
+  --color-secondary: cyan;
+  --color-secondary: purple;
+
+  // Font-sizes
+  --font-size-1: 3rem;
+  --font-size-2: 2.5rem;
+  --font-size-3: 2rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 1rem;
+  --font-size-6: .5rem;
+
+  // General styles
+  --container: 50rem;
+  --mobile-size: 48rem;
+
+  @media (max-width: 48rem) {
+    --font-size-1: 2.5rem;
+    --font-size-2: 2rem;
+    --font-size-3: 1.5rem;
+    --font-size-4: 1.25rem;
+    --font-size-5: 0.8rem;
+    --font-size-6: .5rem;
+
+  }
+}
+
+// SCSS variables = root variables
+$color-primary: var(--color-primary);

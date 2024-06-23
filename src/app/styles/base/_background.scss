@@ -1,0 +1,69 @@
+body {
+  position: relative;
+  background-color: #000;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: monospace;
+  scroll-behavior: smooth;
+
+  &::before {
+    content: '';
+    background-image: url('/images/illustrations/cyberpunk-1.svg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: #fff;
+    position: fixed;
+    display: block;
+    inset: 0;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+
+
+  &__overlay-bg {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+
+
+    @include for-phone-only {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('/images/illustrations/cyberpunk-mini.webp');
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      width: inherit;
+      height: inherit;
+
+    }
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1.25rem rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: purple;
+}
