@@ -20,19 +20,18 @@ export default function BackgroundAnimation() {
         x: e.clientX + window.scrollX,
         y: e.clientY + window.scrollY,
       },
-      mouseMoveStarted: true
+      mouseMoveStarted: true,
     });
   };
 
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
-    console.log('out');
     setBgAnimation({
       ...bgAnimation,
       bgOverlayPosition: { ...bgAnimation.bgOverlayPosition },
       mouseMoveStarted: false,
     });
-  }
+  };
 
   // Add and remove event listener based on window size on mount and resize
   useEffect(() => {
@@ -56,13 +55,17 @@ export default function BackgroundAnimation() {
   }, [bgAnimation.mobileSize]); // Dependency array for resize check
 
   return (
-    <div className="background" onMouseLeave={handleMouseLeave}>
-      {bgAnimation.mouseMoveStarted && <div className="background__overlay-bg"
-        style={{
-          left: `${bgAnimation.bgOverlayPosition.x - 100}px`,
-          top: `${bgAnimation.bgOverlayPosition.y - 100}px`
-        }}></div>}
-
+    <div
+      className='background'
+      onMouseLeave={handleMouseLeave}>
+      {bgAnimation.mouseMoveStarted && (
+        <div
+          className='background__overlay-bg'
+          style={{
+            left: `${bgAnimation.bgOverlayPosition.x - 100}px`,
+            top: `${bgAnimation.bgOverlayPosition.y - 100}px`,
+          }}></div>
+      )}
     </div>
   );
 }
