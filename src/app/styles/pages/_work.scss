@@ -59,15 +59,27 @@
 			animation: fadeUp .6s .6s ease-out forwards;
 		}
 
-		&:nth-child(6) {
+		&:nth-child(5) {
 			animation: fadeUp .6s .8s ease-out forwards;
 		}
 
-		&:nth-child(7) {
+		&:nth-child(6) {
 			animation: fadeUp .6s 1s ease-out forwards;
 		}
 
-		&::before {
+		&:nth-child(7) {
+			animation: fadeUp .6s 1.2s ease-out forwards;
+		}
+
+		&:nth-child(8) {
+			animation: fadeUp .6s 1.4s ease-out forwards;
+		}
+
+		&:nth-child(9) {
+			animation: fadeUp .6s 1.6s ease-out forwards;
+		}
+
+		&:not(.no-bg)::before {
 			content: '';
 			position: absolute;
 			width: 50%;
@@ -101,6 +113,16 @@
 			position: relative;
 			padding-right: 1.625rem;
 
+			&.app-linky {
+				ol {
+					padding: 0;
+
+					li {
+						padding: 0;
+					}
+				}
+			}
+
 			h4 {
 				padding: .5rem 0;
 				font-weight: 600;
@@ -125,7 +147,11 @@
 				li {
 					list-style-type: circle;
 					padding-bottom: 1.25rem;
-					line-height: 1.125rem
+					line-height: 1.125rem;
+
+					p {
+						margin: 0;
+					}
 				}
 			}
 		}
