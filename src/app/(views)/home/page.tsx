@@ -1,59 +1,7 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import TextAnimation from '@/app/_components/TextAnimation';
 
 const Homeview = () => {
-  const [animatedText, setAnimatedText] = useState({
-    text: '',
-    animatedTextResult: '',
-    completedAnimation: false,
-    iterationValue: 0,
-    speed: 50,
-  });
-
-  useEffect(() => {
-    const updateTime = () => {
-      const kosovoTimeZone = new Date().toLocaleString('en-US', {
-        timeZone: 'Europe/Belgrade',
-        timeStyle: 'long',
-        hourCycle: 'h24',
-      });
-      setAnimatedText((prevText) => ({
-        ...prevText,
-        text: `${kosovoTimeZone} - Kosovo, Prishtina`,
-      }));
-    };
-
-    updateTime();
-    const intervalId = setInterval(updateTime, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    if (animatedText.text.length === animatedText.animatedTextResult.length)
-      return;
-
-    const animateTypingText = () => {
-      if (animatedText.iterationValue < animatedText.text.length) {
-        setAnimatedText((prevText) => ({
-          ...prevText,
-          animatedTextResult:
-            prevText.animatedTextResult +
-            prevText.text.charAt(prevText.iterationValue),
-          iterationValue: prevText.iterationValue + 1,
-        }));
-      } else {
-        clearInterval(intervalId);
-      }
-    };
-
-    const intervalId = setInterval(animateTypingText, animatedText.speed);
-
-    return () => clearInterval(intervalId);
-  }, [animatedText]);
-
   return (
     <div className='home'>
       <div className='home__info'>
@@ -90,14 +38,7 @@ const Homeview = () => {
               variety of projects spanning web development, mobile applications,
               and beyond.
             </p>
-            <p className='home__time'>
-              <span className='home__time__date-location'>
-                {animatedText.completedAnimation
-                  ? animatedText.text
-                  : animatedText.animatedTextResult}
-              </span>
-              <span className='home__time__blinker'></span>
-            </p>
+            <TextAnimation />
             <br />
           </div>
         </div>

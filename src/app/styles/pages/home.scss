@@ -19,8 +19,11 @@
     height: 18.75rem;
     border-radius: 50%;
     background-color: #fff;
-    background-image: radial-gradient(rgb(220 220 220 / 74%) .0313rem, #ffffff .0313rem);
-    background-size: .625rem .625rem;
+    background-image: radial-gradient(
+      rgb(220 220 220 / 74%) 0.0313rem,
+      #ffffff 0.0313rem
+    );
+    background-size: 0.625rem 0.625rem;
   }
 
   &__info {
@@ -34,9 +37,8 @@
 
     &__about-me {
       opacity: 0;
-      animation: fadeIn .3s .4s ease-in-out forwards;
+      animation: fadeIn 0.3s 0.4s ease-in-out forwards;
     }
-
 
     &__brackets {
       position: absolute;
@@ -56,13 +58,13 @@
       .icon-bracket-open {
         right: 90%;
         transform: translateX(13.75rem);
-        animation: bracketAnimation .6s .2s ease-in-out forwards;
+        animation: bracketAnimation 0.6s 0.2s ease-in-out forwards;
       }
 
       .icon-bracket-close {
         left: 90%;
         transform: translateX(-13.75rem);
-        animation: bracketAnimation .6s .2s ease-in-out forwards;
+        animation: bracketAnimation 0.6s 0.2s ease-in-out forwards;
       }
     }
   }
@@ -71,7 +73,7 @@
     padding-top: 2.5rem;
     padding-bottom: 1.875rem;
     opacity: 0;
-    animation: fadeIn .3s .4s ease-in-out forwards;
+    animation: fadeIn 0.3s 0.4s ease-in-out forwards;
 
     @media screen and (min-width: 48rem) {
       position: absolute;
@@ -87,48 +89,13 @@
       height: 1.25rem;
 
       &:hover {
-        opacity: .8;
+        opacity: 0.8;
       }
-    }
-  }
-
-  &__time {
-    color: var(--text-color-1);
-    padding-top: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 4.25rem;
-
-    // @include for-phone-only {
-    //   justify-content: flex-start;
-    // }
-
-    &__date-location {
-      font-size: 1rem;
-      opacity: .6;
-
-      &:nth-child(1) {
-        font-variant: tabular-nums;
-      }
-    }
-
-    &__blinker {
-      width: .25rem;
-      height: 1.375rem;
-      background-color: #fff;
-      display: inline-block;
-      opacity: .6;
-      animation: fadeIn .5s ease-in-out alternate infinite;
     }
   }
 
   h2 {
     font-size: var(--font-size-3);
-
-    // @include for-phone-only {
-    //   line-height: 2.1875rem;
-    // }
   }
 
   h1 {
@@ -140,10 +107,6 @@
     font-size: var(--font-size-5);
     padding-top: 1.875rem;
     line-height: 2.375rem;
-
-    // @include for-phone-only {
-    //   line-height: 1.7rem;
-    // }
 
     strong {
       font-weight: bold;
