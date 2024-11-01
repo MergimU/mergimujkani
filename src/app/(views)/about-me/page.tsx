@@ -79,32 +79,25 @@ export default function About() {
               <br />
               Summary:
               <br />
-              Experienced <strong>Software Engineer</strong> with over 6 years
-              of experience working with web frameworks such as React and Vue.
-              Passionate about creating reliable and visually appealing web
+              Experienced <strong>Front-End Engineer</strong> with over 6 years of experience working with web
+              frameworks such as React and Vue. Passionate about creating reliable and visually appealing web
               applications. <br />
-              Skilled in modern web development techniques, including responsive
-              design, accessibility, and performance optimization. Seeking a
-              challenging role at a company that values creativity and
-              innovation.
+              Skilled in modern web development techniques, including responsive design, accessibility, and performance
+              optimization. Seeking a challenging role at a company that values creativity and innovation.
               <br /> <br />
               Skills:
               <br />
               - Proficient in JavaScript, React, TypeScript, HTML, and CSS
               <br />
-              - Experience with modern web development tools such as Vite and
-              Webpack.
+              - Experience with modern web development tools such as Vite and Webpack.
               <br />
               - Proficient in design tools such as Figma and Adobe XD.
               <br />
-              - Communication: Effective communication skills for collaborating
-              with team members, presenting ideas, and discussing technical
-              concepts with stakeholders.
+              - Communication: Effective communication skills for collaborating with team members, presenting ideas, and
+              discussing technical concepts with stakeholders.
               <br />
-              - Continuous Learning: Willingness to stay updated with the latest
-              technologies, frameworks, and industry trends through
-              self-learning, training, and professional development
-              opportunities.
+              - Continuous Learning: Willingness to stay updated with the latest technologies, frameworks, and industry
+              trends through self-learning, training, and professional development opportunities.
               <br />
             </p>
           </div>
