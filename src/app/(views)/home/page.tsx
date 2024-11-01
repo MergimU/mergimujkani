@@ -32,11 +32,9 @@ const Homeview = () => {
           <h1>Mergim Ujkani</h1>
           <div>
             <p>
-              A passionate <strong>Software Engineer</strong> with a knack for
-              problem-solving and a love for elegant code. With years of
-              experience in the industry, I've had the opportunity to work on a
-              variety of projects spanning web development, mobile applications,
-              and beyond.
+              A passionate <strong>Front-End Engineer</strong> with a knack for problem-solving and a love for elegant
+              code. With years of experience in the industry, I've had the opportunity to work on a variety of projects
+              spanning web development, mobile applications, and beyond.
             </p>
             <TextAnimation />
             <br />
