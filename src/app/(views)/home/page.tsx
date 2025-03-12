@@ -28,13 +28,14 @@ const Homeview = () => {
           </svg>
         </div>
         <div className='home__info__about-me'>
-          <h2>My name is</h2>
+          <h2>Hey there! I'm</h2>
           <h1>Mergim Ujkani</h1>
           <div>
             <p>
-              A passionate <strong>Front-End Engineer</strong> with a knack for problem-solving and a love for elegant
-              code. With years of experience in the industry, I've had the opportunity to work on a variety of projects
-              spanning web development, mobile applications, and beyond.
+              "A Front-End Engineer with 6+ years of experience (TypeScript/React ❤️), passionate about building
+              elegant, high-performance UIs that delight users. When I'm not crafting sleek applications, I'm either out
+              running or mastering the art of staying in—gaming, binge-watching The Office, or geeking out over the
+              latest tech. Let's build something amazing together!" 🚀💻🎮
             </p>
             <TextAnimation />
             <br />
