@@ -77,7 +77,7 @@ export default function About() {
               </a>
               <br />
               <br />
-              Summary:
+              <strong> Summary:</strong>
               <br />
               Experienced <strong>Front-End Engineer</strong> with over 6 years of experience working with web
               frameworks such as React and Vue. Passionate about creating reliable and visually appealing web
@@ -85,7 +85,7 @@ export default function About() {
               Skilled in modern web development techniques, including responsive design, accessibility, and performance
               optimization. Seeking a challenging role at a company that values creativity and innovation.
               <br /> <br />
-              Skills:
+              <strong>Skills:</strong>
               <br />
               - Proficient in JavaScript, React, TypeScript, HTML, and CSS
               <br />
@@ -100,6 +100,33 @@ export default function About() {
               trends through self-learning, training, and professional development opportunities.
               <br />
             </p>
+
+            <div className='about__education'>
+              <strong>Education: </strong>
+              <ul>
+                <li>
+                  <a
+                    href='https://www.coursera.org/account/accomplishments/verify/WI6FGMSKHNB6'
+                    target='_blank'>
+                    Advanced React - Meta
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://www.coursera.org/account/accomplishments/verify/LNTMDSN44ZW1'
+                    target='_blank'>
+                    Foundations of Cybersecurity - Google
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://www.coursera.org/account/accomplishments/verify/PGL0DBYYWNWC'
+                    target='_blank'>
+                    Getting Started with Go - University of California, Irvine
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
