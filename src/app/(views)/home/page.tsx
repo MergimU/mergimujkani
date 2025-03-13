@@ -32,11 +32,13 @@ const Homeview = () => {
           <h1>Mergim Ujkani</h1>
           <div>
             <p>
-              "A Front-End Engineer with 6+ years of experience (TypeScript/React ❤️), passionate about building
-              elegant, high-performance UIs that delight users. When I'm not crafting sleek applications, I'm either out
-              running or mastering the art of staying in—gaming, binge-watching The Office, or geeking out over the
-              latest tech. Let's build something amazing together!" 🚀💻🎮
+              Experienced Front-End Engineer with a proven track record of designing and developing high-performance,
+              user-friendly interfaces. Skilled in <strong>TypeScript</strong> and <strong>React</strong>, I am
+              passionate about creating elegant solutions that enhance user experiences. Adept at collaborating with
+              cross-functional teams to deliver scalable and innovative applications. Let's connect to discuss how I can
+              contribute to your next project.
             </p>
+
             <TextAnimation />
             <br />
           </div>
@@ -52,7 +54,6 @@ const Homeview = () => {
             src={'/images/socials/linkedin-icon.svg'}
             width={20}
             height={20}
-            style={{ width: '20px', height: '20px' }}
           />
         </a>
         <a
@@ -63,7 +64,16 @@ const Homeview = () => {
             src={'/images/socials/codepen-icon.svg'}
             width={20}
             height={20}
-            style={{ width: '20px', height: '20px' }}
+          />
+        </a>
+        <a
+          target='_blank'
+          href='https://github.com/MergimU'>
+          <Image
+            alt='Github'
+            src={'/images/socials/github-icon.svg'}
+            width={20}
+            height={20}
           />
         </a>
       </div>

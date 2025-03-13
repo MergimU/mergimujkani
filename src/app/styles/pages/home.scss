@@ -19,10 +19,7 @@
     height: 18.75rem;
     border-radius: 50%;
     background-color: #fff;
-    background-image: radial-gradient(
-      rgb(220 220 220 / 74%) 0.0313rem,
-      #ffffff 0.0313rem
-    );
+    background-image: radial-gradient(rgb(220 220 220 / 74%) 0.0313rem, #ffffff 0.0313rem);
     background-size: 0.625rem 0.625rem;
   }
 
@@ -110,6 +107,7 @@
 
     strong {
       font-weight: bold;
+      text-decoration: underline;
     }
   }
 }
