@@ -76,6 +76,16 @@ const Homeview = () => {
             height={20}
           />
         </a>
+        <a
+          target='_blank'
+          href='https://docs.google.com/document/d/1C4cOE2Ox8NGrwhC-u_miWRWLfrCVlPhmHjjeVdJ_86E/edit?tab=t.0'>
+          <Image
+            alt='Resume'
+            src={'/images/socials/cv2-icon.svg'}
+            width={20}
+            height={20}
+          />
+        </a>
       </div>
     </div>
   );
