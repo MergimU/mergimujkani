@@ -21,20 +21,24 @@ export default function Work() {
             <p>Freelance / (January 2023 - now)</p>
             <p>
               <span>
-                As a freelancer, I've worked with clients that required mostly experience as a front-end engineer and
-                personal projects like chrome extensions and full-stack apps with NextJS .
+                Freelancer specializing in building web applications with TypeScript and React.
+                <br></br>
+                <br></br>
+                My core tech stack includes Redux Toolkit for scalable state management, TailwindCSS/SCSS for styling,
+                and testing frameworks like Jest (unit) and Playwright (E2E). I also incorporate CI/CD pipelines to
+                improve developer experience and maintain code quality.
+              </span>
+
+              <span>
+                Side Projects: Linky (Chrome Extension): Highlight any word on a webpage to instantly get definitions or
+                information from trusted sources like Wikipedia. Users can also add custom sources for even more
+                flexibility.
               </span>
               <span>
-                Client project (Dashboard UI) - This project was used by a school system for managing data for teachers
-                and students. Creating a dashboard using technologies like ReactJS, Redux-toolkit and SCSS was a great
-                choice for this product since the app was mid-large size.
-              </span>
-              <span>
-                Personal project (chrome extension) - This Chrome extension simplifies your online experience:{' '}
                 <Link
                   target='_blank'
                   href='https://chromewebstore.google.com/detail/linky/alfhdmidbiiklpndmlgakcheoojncdja?hl=en-US'>
-                  Linky
+                  Chrome - Web Store
                 </Link>
               </span>
             </p>
