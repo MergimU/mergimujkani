@@ -66,6 +66,7 @@ export default function BackgroundAnimation() {
             top: `${bgAnimation.bgOverlayPosition.y - 100}px`,
           }}></div>
       )}
+      <div className='bgfilter'></div>
     </div>
   );
 }

@@ -6,20 +6,29 @@ body {
   font-family: monospace;
   scroll-behavior: smooth;
 
-  // &::before {
-  //   content: '';
-  //   background-image: url('/images/illustrations/cyberpunk-1.svg');
-  //   background-position: center;
-  //   background-size: cover;
-  //   background-attachment: scroll;
-  //   background-color: #fff;
-  //   position: fixed;
-  //   display: block;
-  //   inset: 0;
-  //   opacity: 0.2;
-  //   overflow: hidden;
-  //   z-index: -1;
-  // }
+  &::before {
+    content: '';
+    background-image: url('/images/illustrations/cyberpunk-1.svg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: #fff;
+    position: fixed;
+    display: block;
+    inset: 0;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: -2;
+    backdrop-filter: blur(70px);
+  }
+
+  .bgfilter {
+    position: fixed;
+    display: block;
+    inset: 0;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+  }
 
   &::-webkit-scrollbar {
     width: 0.5em;
