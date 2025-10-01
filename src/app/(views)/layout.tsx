@@ -1,4 +1,4 @@
-// import BackgroundAnimation from '../_components/BackgroundAnimation';
+import BackgroundAnimation from '../_components/BackgroundAnimation';
 import Navigation from '../_components/Navigation';
 
 export default function Layout({
@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <>
       <Navigation />
-      {/* <BackgroundAnimation /> */}
+      <BackgroundAnimation />
       {children}
     </>
   );

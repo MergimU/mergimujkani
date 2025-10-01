@@ -15,7 +15,8 @@ function Navigation() {
       const positionY = window.scrollY;
       const newOpacity = positionY > menuToggle ? 0 : 1;
 
-      if (opacity !== newOpacity) { // Only update if opacity has changed
+      if (opacity !== newOpacity) {
+        // Only update if opacity has changed
         setOpacity(newOpacity);
       }
     };
@@ -26,16 +27,30 @@ function Navigation() {
   }, [opacity, menuToggle]); // Dependency array optimization
 
   return (
-    <nav className="navigation" style={{ opacity }}>
+    <nav
+      className='navigation'
+      style={{ opacity }}>
       <ul>
         <li>
-          <Link href="/" className={pathName === '/home' ? 'active-route' : ''} >Home</Link>
+          <Link
+            href='/'
+            className={pathName === '/home' ? 'active-route' : ''}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/about-me" className={pathName === '/about-me' ? 'active-route' : ''}>About</Link>
+          <Link
+            href='/about-me'
+            className={pathName === '/about-me' ? 'active-route' : ''}>
+            About
+          </Link>
         </li>
         <li>
-          <Link href="/work" className={pathName === '/work' ? 'active-route' : ''}>Work</Link>
+          <Link
+            href='/work'
+            className={pathName === '/work' ? 'active-route' : ''}>
+            Work
+          </Link>
         </li>
       </ul>
     </nav>
